@@ -9,8 +9,7 @@ define view ZI_STUDENT_OVERVIEW
     
     association [0..*] to zenrollment_td as _enrollments
         on s.student_id = _enrollments.student_id
-    association [0..*] to zcourse_td as _Courses
-        on _enrollments.course_id = _Courses.course_id
+    
     
 {
     key s.student_id,
